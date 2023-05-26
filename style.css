@@ -1,0 +1,595 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+.cabecera {
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/001/901/107/non_2x/dark-wood-texture-antique-background-panels-free-photo.jpg);
+}
+
+.imagen{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 1.25rem;
+  color: #efb810;
+}
+
+.boton-logo{
+  background-color: #E1E1E1;
+  border: none;
+}
+
+.boton-logo:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.logo img {
+  width: 150px; 
+  height: auto;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  font-family: 'DM Serif Display', serif;
+  display: block;
+  padding-top: 1.5rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease-in-out, color 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #efb810;
+  border-radius: 3%;
+  transform: scale(1.1);
+}
+
+.secciones {
+  width: 90%;
+  margin: auto;
+}
+
+#ACERCA-DE-MI{
+  margin-top: 50px;
+  border: 2px transparent solid;
+  border-radius: 100px;
+  margin-bottom: 2rem;
+}
+
+#PRODUCTOS-REALIZADOS{
+  border: 2px transparent solid;
+  border-radius: 100px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#PRODUCTOS-REFORMADOS{
+  border: 2px transparent solid;
+  border-radius: 100px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+
+
+#ACERCA-DE-MI:hover{
+  animation: girar 2.5s linear infinite;
+}
+
+#PRODUCTOS-REALIZADOS:hover{
+  animation: girar 2.5s linear infinite;
+}
+
+#PRODUCTOS-REFORMADOS:hover{
+  animation: girar 2.5s linear infinite;
+}
+
+
+.secciones button{
+  text-decoration: none;
+  color: white;
+  background-color: #efb810;
+  border: none;
+  margin: 20px;
+  height: 30px;
+  width: 220px;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 7%;
+}
+
+.secciones button:active{
+  transform: scale(1.1);
+  color: #efb810;
+  background-color: #000000;
+  transition: color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
+}
+
+@keyframes girar {
+  0% {
+    border-top-color: #efb810;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  25% {
+    border-top-color: transparent;
+    border-right-color: #efb810;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #efb810;
+    border-left-color: transparent;
+  }
+  75% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #efb810;
+  }
+  100% {
+    border-top-color: #efb810;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+.subrayar:hover {
+  text-decoration: underline;
+}
+
+.subrayar:active{
+  text-decoration: none;
+}
+
+.secciones img {
+  width: 300px;
+  height: 300px;
+}
+
+.secciones p{
+  padding-left: 20px;
+  font-size: 1.5rem;
+  padding-right: 7rem;
+}
+
+.secciones h1{
+  
+  padding: 20px;
+  text-align: inherit;
+  color: black;
+  font-size: 3rem;
+  border-bottom: 1px solid #efb810;
+  }
+
+.acerca {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  color: black;
+  font-size: 2.5rem;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+.antes-despues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 70px; 
+  margin: auto;
+}
+
+.antes-despues h1{
+  text-align: center;
+  padding-right: 20px;
+  font-family: 'Kaushan Script', cursive;
+  margin-right: 1rem;
+}
+
+.antes-despues img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px black;
+}
+
+.producto {
+  margin: 20px;
+  text-align: center;   
+}
+
+.antes-despues:hover{
+  background-color: rgb(211, 211, 211);
+  transition: 0.5s ease-in-out;
+}
+
+.producto img {
+  width: 200px;
+  height: 200px; 
+  border-radius: 10px;
+}
+
+.producto h3 {
+  margin-top: 10px;
+}
+
+
+
+* {
+  font-family: 'DM Serif Display', serif;
+}
+
+
+.footer-div {
+border-top: #ffffff;
+}
+
+.footer-distributed{
+font-family: 'DM Serif Display', serif;
+background-image: url(https://static.vecteezy.com/system/resources/previews/001/901/107/non_2x/dark-wood-texture-antique-background-panels-free-photo.jpg);
+box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+width: 100%;
+text-align: left;
+font: bold 16px sans-serif;
+padding: 20px 50px;
+}
+
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: inline-block;
+vertical-align: top;
+}
+
+
+.footer-distributed .footer-left{
+width: 40%;
+}
+
+
+.footer-distributed h3{
+color:  white;
+font: normal 36px 'Open Sans', cursive;
+margin: 0;
+}
+
+.footer-distributed h3 span{
+color:  #efb810;
+}
+
+
+.footer-distributed .footer-links{
+color:  white;
+margin: 20px 0 12px;
+padding: 0;
+}
+
+.footer-distributed .footer-links a{
+display:inline-block;
+line-height: 1.8;
+font-weight:400;
+text-decoration: none;
+color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+color:  #efb810;
+font-size: 14px;
+font-weight: normal;
+margin: 0;
+}
+
+
+.footer-distributed .footer-center{
+width: 35%;
+}
+
+.footer-distributed .footer-center i{
+background-color:  #33383b;
+color: #000000;
+font-size: 25px;
+width: 38px;
+height: 38px;
+border-radius: 50%;
+text-align: center;
+line-height: 42px;
+margin: 10px 15px;
+vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+font-size: 17px;
+line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+display: inline-block;
+color: white;
+font-weight:400;
+vertical-align: middle;
+margin:0;
+}
+
+.footer-distributed .footer-center p span{
+display:block;
+font-weight: normal;
+font-size:14px;
+line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+color:  #efb810;
+text-decoration: none;;
+}
+
+.footer-distributed .footer-links a:before {
+content: "|";
+font-weight:300;
+font-size: 20px;
+left: 0;
+color: #efb810;
+display: inline-block;
+padding-right: 5px;
+}
+
+.footer-distributed .footer-links .link-1:before {
+content: none;
+}
+
+
+.footer-distributed .footer-right{
+width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+line-height: 20px;
+color:  white;
+font-size: 13px;
+font-weight: normal;
+margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+display: block;
+color:  #efb810;
+font-size: 14px;
+font-weight: bold;
+margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+display: inline-block;
+width: 35px;
+height: 35px;
+cursor: pointer;
+border-radius: 2px;
+
+font-size: 20px;
+color: black;
+text-align: center;
+line-height: 35px;
+
+margin-right: 3px;
+margin-bottom: 5px;
+}
+
+.footer-icons img {
+height: auto;
+width: 100%;
+}
+
+@media (max-width: 880px) {
+
+.footer-distributed{
+font: bold 14px sans-serif;
+}
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+display: block;
+width: 100%;
+margin-bottom: 40px;
+text-align: center;
+}
+
+.footer-distributed .footer-center i{
+margin-left: 0;
+}
+
+}
+
+
+.carousel {
+  margin-top: 35px;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+.carousel-slide {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 900px;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 0px 0px 5px 2px #efb810;
+}
+
+@media (max-width: 768px) {
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* CONTACTO STYLE */
+
+#contacto {
+  text-align: center;
+  padding: 40px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.formulario input[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.formulario input[type="submit"]:active {
+  background-color: #efb810;
+  color: #000;
+  transition: color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+
+/*PRODUCTO-REALIZADO CSS*/
+
+
+.producto-realizado {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+
+.imagenes-producto-realizado img {
+  display: flex;
+  width: 350px;
+  height: auto;
+  margin-right: 4rem;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.producto-realizado h2 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+}
+
+.producto-realizado p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.imagenes-producto-realizado {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 30px;
+  
+}
+
+.imagenes-producto-realizado img:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 0 10px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
