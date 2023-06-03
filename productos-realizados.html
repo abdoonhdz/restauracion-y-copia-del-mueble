@@ -4,174 +4,211 @@
     <meta charset="UTF-8">
     <title>Productos Realizados | RESTAURACIÓN & COPIA DEL MUEBLE</title>
     <link rel="stylesheet" href="style.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
   </head>
   <body>
     <div class="cabecera">
-    <header>
-      <div class="imagen">
-     </a><img src="restauracion_y_copia_del_mueble_definitivo-removebg-preview.png" alt="">
-    </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Acerca de mí</a></li>
-          |
-          <li><a href="productos-realizados.html">Productos Realizados</a></li>
-          |
-          <li><a href="productos-reformados.html">Productos Reformados</a></li>
-          |
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-  </div>
-    <main> 
-        <div class="secciones">
-            <section id="PRODUCTOS-REALIZADOS">
-                <h1>Productos Realizados</h1>
-                
-                <div class="producto-realizado">
-                    <h1 style="margin: auto">VESTIDOR</h1>
-                    <br>
-                    <div class="imagenes-producto-realizado">
-                        <img src="ropero-1.PNG" alt="Producto 1">
-                        <img src="ropero-2.PNG" alt="Producto 1">
-                        <img src="ropero-3.PNG" alt="Producto 1" style="margin-right: 0 !important;">
-                    </div>         
-                        
-                </div>
-                <p style="margin-bottom: 6rem; text-align: center; font-size: 30px; 
-                font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
-                    Vestidor abierto hecho a medida en tablero de melamina blanca de 19mm, ocupa un a habitación entera.
-                </p>   
-                <div class="producto-realizado">
-                    <h1 style="margin: auto">BARANDA</h1>
-                    <br>
-                    <div class="imagenes-producto-realizado">
-                        <img src="baranda-1.PNG" alt="Producto 1">
-                        <img src="baranda-2.PNG" alt="Producto 1">
-                        <img src="baranda-3.PNG" alt="Producto 1" style="margin-right: 0 !important;">
-                    </div> 
-                </div>
-                <p style="margin-bottom: 6rem; text-align: center; font-size: 30px; font-family: 
-                'Kaushan Script', cursive; background-color: #474645;
-                 color: white; margin: 40px; padding-right: 0 !important;">
-                    Baranda de balaustrada de haya y pie tallado acabada en poliuretano satinado.
-                </p>   
-                <div class="producto-realizado">
-                    <h1 style="margin: auto">PUERTA</h1>
-                    <br>
-                    <div class="imagenes-producto-realizado">
-                        <img src="puerta-casa-1.PNG" alt="Producto 1">
-                        <img src="puerta-casa-2.PNG" alt="Producto 1" style="margin-right: 0 !important;">
-                        
-                    </div> 
-                </div>
-                <p style="margin-bottom: 6rem; text-align: center; font-size: 30px;
-                 font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
-                    Puerta de entrada hecha en madera maciza de iroko, con fijo acristalado y acabado natural de 2,55 x 1,70.
-                </p>   
-                <div class="producto-realizado">
-                    <h1 style="margin: auto">PORTÓN</h1>
-                    <br>
-                    <div class="imagenes-producto-realizado">
-                        <img src="porton-1.PNG" alt="Producto 1">
-                        <img src="porton-2.PNG" alt="Producto 1" style="margin-right: 0 !important;">
-                        
-                    </div> 
-                </div>
-                <p style="margin-bottom: 6rem; text-align: center; font-size: 30px;
-                 font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
-                    Portón de medio punto y puerta de medio punto, en madera de pino flandes, con talla hecha a mano y diseño propio.
-                </p>   
-                <div class="producto-realizado">
-                    <h1 style="margin: auto">REJA</h1>
-                    <br>
-                    <div class="imagenes-producto-realizado">
-                        <img src="reja-1.PNG" alt="Producto 1">
-                        <img src="reja-2.PNG" alt="Producto 1">
-                        <img src="reja-3.PNG" alt="Producto 1" style="margin-right: 0 !important;">
-                    </div> 
-                </div>
-                <p style="margin-bottom: 6rem; text-align: center; font-size: 30px; 
-                font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
-                    Reja de hierro, hecha a medida con doble medio punto ,con barrotes de hierro macizo de 
-                    14 mm y dibujos hechos a mano denominándose forja en frío.
-                </p>   
-              </section>
+      <header>
+        <div class="imagen">
+          <img src="/imagenes/restauracion_y_copia_del_mueble_definitivo-removebg-preview.png" alt="">
         </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Acerca de mí</a></li>
+            |
+            <li><a href="#" onclick="toggleSubMenu(event)">Productos Realizados <i class="fas fa-chevron-down"></i></a>
+              <ul class="submenu">
+                <li><a href="#vestidor">Vestidor</a></li>
+                <li><a href="#baranda">Baranda</a></li>
+                <li><a href="#puerta">Puerta</a></li>
+                <li><a href="#porton">Portón</a></li>
+                <li><a href="#reja">Reja</a></li>
+              </ul>
+            </li>
+            |
+            <li><a href="productos-reformados.html">Productos Reformados</a></li>
+            |
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
     </div>
+    <main>
+      <div class="secciones">
+        <section id="PRODUCTOS-REALIZADOS">
+          <h1>Productos Realizados</h1>
+          
+          <div class="producto-realizado" id="vestidor">
+            <h1 style="margin: auto">VESTIDOR</h1>
+            <br>
+            <div class="imagenes-producto-realizado">
+              <img src="productos-reformados/ropero-1.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/ropero-2.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/ropero-3.PNG" alt="Producto 1" style="margin-right: 0 !important;" onclick="openModal(this)">
+            </div>
+          </div>
+          <p style="margin-bottom: 6rem; text-align: center; font-size: 30px;
+                  font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
+            Vestidor abierto hecho a medida en tablero de melamina blanca de 19mm, ocupa un a habitación entera.
+          </p>
+  
+          <div class="producto-realizado" id="baranda">
+            <h1 style="margin: auto">BARANDA</h1>
+            <br>
+            <div class="imagenes-producto-realizado">
+              <img src="productos-reformados/baranda-1.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/baranda-2.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/baranda-3.PNG" alt="Producto 1" style="margin-right: 0 !important;" onclick="openModal(this)">
+            </div>
+          </div>
+          <p style="margin-bottom: 6rem; text-align: center; font-size: 30px; font-family:
+                  'Kaushan Script', cursive; background-color: #474645;
+                   color: white; margin: 40px; padding-right: 0 !important;">
+            Baranda de balaustrada de haya y pie tallado acabada en poliuretano satinado.
+          </p>
+  
+          <div class="producto-realizado" id="puerta">
+            <h1 style="margin: auto">PUERTA</h1>
+            <br>
+            <div class="imagenes-producto-realizado">
+              <img src="productos-reformados/puerta-casa-1.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/puerta-casa-2.PNG" alt="Producto 1" style="margin-right: 0 !important;" onclick="openModal(this)">
+            </div>
+          </div>
+          <p style="margin-bottom: 6rem; text-align: center; font-size: 30px;
+                   font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
+            Puerta de entrada hecha en madera maciza de iroko, con fijo acristalado y acabado natural de 2,55 x 1,70.
+          </p>
+  
+          <div class="producto-realizado" id="porton">
+            <h1 style="margin: auto">PORTÓN</h1>
+            <br>
+            <div class="imagenes-producto-realizado">
+              <img src="productos-reformados/porton-1.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/porton-2.PNG" alt="Producto 1" style="margin-right: 0 !important;" onclick="openModal(this)">
+            </div>
+          </div>
+          <p style="margin-bottom: 6rem; text-align: center; font-size: 30px;
+                   font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
+            Portón de medio punto y puerta de medio punto, en madera de pino flandes, con talla hecha a mano y diseño propio.
+          </p>
+  
+          <div class="producto-realizado" id="reja">
+            <h1 style="margin: auto">REJA</h1>
+            <br>
+            <div class="imagenes-producto-realizado">
+              <img src="productos-reformados/reja-1.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/reja-2.PNG" alt="Producto 1" onclick="openModal(this)">
+              <img src="productos-reformados/reja-3.PNG" alt="Producto 1" style="margin-right: 0 !important;" onclick="openModal(this)">
+            </div>
+          </div>
+          <p style="margin-bottom: 6rem; text-align: center; font-size: 30px;
+                  font-family: 'Kaushan Script', cursive; background-color: #474645; color: white; margin: 40px; padding-right: 0 !important;">
+            Reja de hierro, hecha a medida con doble medio punto, con barrotes de hierro macizo de
+            14 mm y dibujos hechos a mano denominándose forja en frío.
+          </p>
+        </section>
+      </div>
     </main>
     <div class="footer-div">
-    <footer class="footer-distributed">
-
-      <div class="footer-left">
-
-        <h3>Restauración <span>& copia del mueble</span></h3>
-
-        <p class="footer-links">
+      <footer class="footer-distributed">
+  
+        <div class="footer-left">
+  
+          <h3>Restauración <span>& copia del mueble</span></h3>
+  
+          <p class="footer-links">
             <a href="index.html" class="link-1">Inicio</a>
-          
+  
             <a href="index.html">Acerca de mí</a>
-          
+  
             <a href="productos-realizados.html">Productos realizados</a>
-          
+  
             <a href="productos-reformados.html">Productos reformados</a>
-            
+  
             <a href="contacto.html">Contacto</a>
-        </p>
-
-        <br>
-        <p class="footer-company-name">Abdón Hernández Perera © 2023</p>
-        
-      </div>
-
-      <div class="footer-center">
-
-        <div>
-          <i class="fa fa-map-marker"></i>
-          <a href="https://www.google.com/maps/place/06225+Ribera+del+Fresno,+Badajoz/@38.5509563,-6.2486431,15z/data=!3m1!4b1!4m6!3m5!1s0xd14061f99292445:0xc0bba8f7d155b4a1!8m2!3d38.5511887!4d-6.2389221!16s%2Fm%2F02z7m6x"
-             target="_blank">
-             
-            <p>Ribera del Fresno, Badajoz</p></a>
+          </p>
+  
+          <br>
+          <p class="footer-company-name">Abdón Hernández Perera © 2023</p>
+  
+        </div>
+  
+        <div class="footer-center">
+  
+          <div>
+            <i class="fa fa-map-marker"></i>
+            <a href="https://www.google.com/maps/place/06225+Ribera+del+Fresno,+Badajoz/@38.5509563,-6.2486431,15z/data=!3m1!4b1!4m6!3m5!1s0xd14061f99292445:0xc0bba8f7d155b4a1!8m2!3d38.5511887!4d-6.2389221!16s%2Fm%2F02z7m6x"
+              target="_blank">
+  
+              <p>Ribera del Fresno, Badajoz</p>
+            </a>
             <br>
             <br>
-            
+  
+          </div>
+  
+          <div>
+            <i class="fa fa-phone"></i>
+            <p>+34 633 669 780</p>
+            <br>
+            <br>
+          </div>
+  
+          <div>
+            <i class="fa fa-envelope"></i>
+            <p><a>abdonhc@gmail.com</a></p>
+          </div>
+  
         </div>
-
-        <div>
-          <i class="fa fa-phone"></i>
-          <p>+34 633 669 780</p>
-          <br>
-          <br>
+  
+        <div class="footer-right">
+  
+          <p class="footer-company-about">
+            <span>Mi página de Facebook</span>
+            Aquí podréis ver todas las novedades sobre mí y mi página a tiempo real. Os agradecería que me siguieseis en esta página y si os agrada le dieseis a "Me gusta" tanto a la misma página como a los contenidos. Gracias.
+          </p>
+  
+          <div class="footer-icons">
+  
+            <a href="https://www.facebook.com/people/Recuperaci%C3%B3n-y-copia-del-mueble/100064165689441/" target="_blank">
+              <i class="fa fa-facebook">
+                <img src="/imagenes/fb.png">
+              </i>
+            </a>
+  
+          </div>
+  
         </div>
+  
+      </footer>
+    </div>
+    
+    <!-- Ventana emergente -->
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImage">
+    </div>
+  
+    <script>
+      function openModal(img) {
+        var modal = document.getElementById("myModal");
+        var modalImg = document.getElementById("modalImage");
+        modal.style.display = "block";
+        modalImg.src = img.src;
+      }
+  
+      function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+      }
 
-        <div>
-          <i class="fa fa-envelope"></i>
-          <p><a>abdonhc@gmail.com</a></p>
-        </div>
-
-      </div>
-
-      <div class="footer-right">
-
-        <p class="footer-company-about">
-          <span>Mi página de Facebook</span>
-          Aquí podréis ver todas las novedades sobre mí y mi página a tiempo real. Os agradecería que me siguieseis en esta página y si os agrada le dieseis a "Me gusta" tanto a la misma página como a los contenidos. Gracias.
-        </p>
-
-        <div class="footer-icons">
-
-          <a href="https://www.facebook.com/people/Recuperaci%C3%B3n-y-copia-del-mueble/100064165689441/" target="_blank">
-            <i class="fa fa-facebook">
-              <img src="fb.png">
-            </i></a>
-
-        </div>
-
-      </div>
-
-    </footer>
-  </div>
+      function toggleSubMenu(event) {
+        event.preventDefault();
+        var submenu = event.target.nextElementSibling;
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+  }
+    </script>
+  
   </body>
-</html>
+  </html>
