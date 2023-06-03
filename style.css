@@ -327,6 +327,7 @@ margin: 0;
 
 .footer-distributed .footer-center{
 width: 35%;
+ margin-top: 2rem;
 }
 
 .footer-distributed .footer-center i{
@@ -342,7 +343,7 @@ margin: 10px 15px;
 vertical-align: middle;
 }
 
-.footer-distributed .footer-center i.fa-envelope{
+.footer-distributed .footer-center {
 font-size: 17px;
 line-height: 38px;
 }
