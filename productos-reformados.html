@@ -4,89 +4,91 @@
     <meta charset="UTF-8">
     <title>Productos-Reformados | RESTAURACIÓN & COPIA DEL MUEBLE</title>
     <link rel="stylesheet" href="style.css">
-    
-  </head>
-  <body>
-    <div class="cabecera">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+      </head>
+<body>
+  <div class="cabecera">
     <header>
       <div class="imagen">
-     </a><img src="restauracion_y_copia_del_mueble_definitivo-removebg-preview.png" alt="">
-    </div>
+        <img src="/imagenes/restauracion_y_copia_del_mueble_definitivo-removebg-preview.png" alt="">
+      </div>
       <nav>
         <ul>
           <li><a href="index.html">Acerca de mí</a></li>
           |
           <li><a href="productos-realizados.html">Productos Realizados</a></li>
           |
-          <li><a href="productos-reformados.html">Productos Reformados</a></li>
+          <li><a href="#" onclick="toggleSubMenu(event)">Productos Reformados <i class="fas fa-chevron-down"></i></a>
+            <ul class="submenu">
+              <li><a href="#mesa">Mesa</a></li>
+              <li><a href="#comoda">Cómoda</a></li>
+              <li><a href="#piano">Piano</a></li>
+              <li><a href="#silla">Silla</a></li>
+            </ul>
+          </li>
           |
           <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
   </div>
-    <main> 
-    
+  <main> 
     <div class="secciones">
       <section id="PRODUCTOS-REFORMADOS">
         <h1>Productos Reformados</h1>
         <div class="antes-despues">
-          
           <h1 style="text-align: center; margin-right: 4rem; font-size: 35px;">Antes</h1>
           <div class="producto">
-            <img src="mesa-1.jpg" alt="Imagen antes">
+            <img src="productos-reformados/mesa-1.jpg" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="mesa-2.jpg" alt="Imagen después">
+            <img src="productos-reformados/mesa-2.jpg" alt="Imagen después" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="mesa-3.jpg" alt="Imagen antes">
-          </div>
-         
-        </div>
-        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;">---MESA---</h2></div>
-        <div class="antes-despues">
-          <h1 style="text-align: center; margin-right: 1rem; font-size: 35px;">Despues</h1>
-          <div class="producto">
-            <img src="mesa-despues-1.jpg" alt="Imagen antes">
-          </div>
-          <div class="producto">
-            <img src="mesa-despues-2.jpg" alt="Imagen después">
-          </div>
-          <div class="producto">
-            <img src="mesa-despues-3.jpg" alt="Imagen antes">
+            <img src="productos-reformados/mesa-3.jpg" alt="Imagen antes" onclick="openModal(this)">
           </div>
         </div>
+        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;" id="mesa">---MESA---</h2></div>
+        <div class="antes-despues">
+          <h1 style="text-align: center; margin-right: 1rem; font-size: 35px;">Después</h1>
+          <div class="producto">
+            <img src="productos-reformados/mesa-despues-1.jpg" alt="Imagen antes" onclick="openModal(this)">
+          </div>
+          <div class="producto">
+            <img src="productos-reformados/mesa-despues-2.jpg" alt="Imagen después" onclick="openModal(this)">
+          </div>
+          <div class="producto">
+            <img src="productos-reformados/mesa-despues-3.jpg" alt="Imagen antes" onclick="openModal(this)">
+          </div>
+        </div>
         <br>
         <br>
         <br>
         <br>
         <div class="antes-despues">
-          
           <div class="producto">
-            <img src="comoda-1.PNG" alt="Imagen antes">
+            <img src="productos-reformados/comoda-1.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="comoda-2.PNG" alt="Imagen después">
+            <img src="productos-reformados/comoda-2.PNG" alt="Imagen después" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="comoda-3.PNG" alt="Imagen antes">
+            <img src="productos-reformados/comoda-3.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <h1 style="text-align: center; margin-left: 4rem; font-size: 35px;">Antes</h1>
         </div>
-        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;">---CÓMODA---</h2></div>
+        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;" id="comoda">---CÓMODA---</h2></div>
         <div class="antes-despues">
-          
           <div class="producto">
-            <img src="comoda-despues-1.PNG" alt="Imagen antes">
+            <img src="productos-reformados/comoda-despues-1.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="comoda-despues-2.PNG" alt="Imagen después">
+            <img src="productos-reformados/comoda-despues-2.PNG" alt="Imagen después" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="comoda-despues-3.PNG" alt="Imagen antes">
+            <img src="productos-reformados/comoda-despues-3.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
-          <h1 style="text-align: center; margin-left: 1rem; font-size: 35px;">Despues</h1>
+          <h1 style="text-align: center; margin-left: 1rem; font-size: 35px;">Después</h1>
         </div>
         <br>
         <br>
@@ -95,62 +97,57 @@
         <div class="antes-despues">
           <h1 style="text-align: center; margin-left: 4rem; font-size: 35px;">Antes</h1>
           <div class="producto">
-            <img src="piano-1.PNG" alt="Imagen antes">
+            <img src="productos-reformados/piano-1.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="piano-2.PNG" alt="Imagen después">
+            <img src="productos-reformados/piano-2.PNG" alt="Imagen después" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="piano-3.PNG" alt="Imagen antes">
+            <img src="productos-reformados/piano-3.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
-          
         </div>
-        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;">---PIANO---</h2></div>
+        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;" id="piano">---PIANO---</h2></div>
         <div class="antes-despues">
-          <h1 style="text-align: center; margin-left: 1rem; font-size: 35px;">Despues</h1>
+          <h1 style="text-align: center; margin-left: 1rem; font-size: 35px;">Después</h1>
           <div class="producto">
-            <img src="piano-despues-1.PNG" alt="Imagen antes">
+            <img src="productos-reformados/piano-despues-1.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="piano-despues-2.PNG" alt="Imagen después">
+            <img src="productos-reformados/piano-despues-2.PNG" alt="Imagen después" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="piano-despues-3.PNG" alt="Imagen antes">
+            <img src="productos-reformados/piano-despues-3.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
-          
         </div>
         <br>
         <br>
         <br>
         <br>
         <div class="antes-despues">
-          
           <div class="producto">
-            <img src="silla-antes-1.PNG" alt="Imagen antes">
+            <img src="productos-reformados/silla-antes-1.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="silla-antes-2.PNG" alt="Imagen después">
+            <img src="productos-reformados/silla-antes-2.PNG" alt="Imagen después" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="silla-antes-3.PNG" alt="Imagen antes">
+            <img src="productos-reformados/silla-antes-3.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <h1 style="text-align: center; margin-left: 4rem; font-size: 35px;">Antes</h1>
         </div>
-        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;">---SILLA---</h2></div>
+        <div class="nombre-producto"><h2 style="text-align: center; font-family: 'Kaushan Script', cursive;" id="silla">---SILLA---</h2></div>
         <div class="antes-despues">
-          
           <div class="producto">
-            <img src="silla-despues-1.PNG" alt="Imagen antes">
+            <img src="productos-reformados/silla-despues-1.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="silla-despues-2.PNG" alt="Imagen después">
+            <img src="productos-reformados/silla-despues-2.PNG" alt="Imagen después" onclick="openModal(this)">
           </div>
           <div class="producto">
-            <img src="silla-despues-3.PNG" alt="Imagen antes">
+            <img src="productos-reformados/silla-despues-3.PNG" alt="Imagen antes" onclick="openModal(this)">
           </div>
-          <h1 style="text-align: center; margin-left: 1rem; font-size: 35px;">Despues</h1>
+          <h1 style="text-align: center; margin-left: 1rem; font-size: 35px;">Después</h1>
         </div>
-        
       </section>
     </div>
     </main>
@@ -216,7 +213,7 @@
 
           <a href="https://www.facebook.com/people/Recuperaci%C3%B3n-y-copia-del-mueble/100064165689441/" target="_blank">
             <i class="fa fa-facebook">
-              <img src="fb.png">
+              <img src="/imagenes/fb.png">
             </i></a>
 
         </div>
@@ -225,5 +222,31 @@
 
     </footer>
   </div>
+  <div id="myModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage">
+  </div>
+  <script>
+    function openModal(image) {
+      var modal = document.getElementById("myModal");
+      var modalImg = document.getElementById("modalImage");
+      modal.style.display = "block";
+      modalImg.src = image.src;
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+    span.onclick = function() {
+      var modal = document.getElementById("myModal");
+      modal.style.display = "none";
+    }
+
+    function toggleSubMenu(event) {
+        event.preventDefault();
+        var submenu = event.target.nextElementSibling;
+        submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
   </body>
 </html>
+
