@@ -533,14 +533,14 @@ p {
 .producto-realizado {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  width: 200px;
   margin: auto;
   margin-bottom: 6rem;
 }
 
 .imagenes-producto-realizado img {
   display: flex;
-  width: 200px;
+  width: 350px;
   height: auto;
   margin-right: 4rem;
   margin-bottom: 10px;
