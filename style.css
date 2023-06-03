@@ -533,7 +533,7 @@ p {
 .producto-realizado {
   display: flex;
   flex-direction: column;
-  width: 200px;
+  width: 350px;
   margin: auto;
   margin-bottom: 6rem;
 }
@@ -555,20 +555,21 @@ p {
 }
 
 @media only screen and (max-width: 1000px) {
-  .imagenes-producto-realizado img {
+  .producto-realizado {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+
+.imagenes-producto-realizado img {
   display: flex;
   width: 350px;
   height: auto;
   margin-right: 4rem;
   margin-bottom: 10px;
   border-radius: 10px;
-}
-
-.producto-realizado h2 {
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-
 }
   
 }
