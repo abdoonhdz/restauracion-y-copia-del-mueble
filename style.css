@@ -533,14 +533,14 @@ p {
 .producto-realizado {
   display: flex;
   flex-direction: column;
-  width: 350px;
+  width: 300px;
   margin: auto;
   margin-bottom: 6rem;
 }
 
 .imagenes-producto-realizado img {
   display: flex;
-  width: 350px;
+  width: 300px;
   height: auto;
   margin-right: 4rem;
   margin-bottom: 10px;
@@ -552,26 +552,6 @@ p {
   margin-top: 10px;
   margin-bottom: 5px;
 
-}
-
-@media only screen and (max-width: 1000px) {
-  .producto-realizado {
-  display: flex;
-  flex-direction: column;
-  width: 250px;
-  margin: auto;
-  margin-bottom: 6rem;
-}
-
-.imagenes-producto-realizado img {
-  display: flex;
-  width: 350px;
-  height: auto;
-  margin-right: 4rem;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-  
 }
 
 .producto-realizado p {
